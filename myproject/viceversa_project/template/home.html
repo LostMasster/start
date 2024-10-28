@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        textarea {
+width: 50%;
+height: 100px;
+padding: 10px;
+border: 5px solid #5F8EDF;
+border-radius: 15px;
+font-size: 20px;
+}
+        textarea:focus {
+            border-color: orange; /* Подсветка оранжевой рамкой при фокусе */
+            outline: none; /* Убирает стандартную черную рамку браузера */
+        }
+    </style>
+</head>
+<body>
+<form action="/submit" method="post">
+    <label for="message"><p><b><font size="20">Vice Versa</font></b></p></label><br>
+    <textarea id="message" name="message" rows="10" cols="50" placeholder="Vice Versa"></textarea><br>
+    <input type="submit" value="Reverse!">
+</form>
+</body>
+</html>
