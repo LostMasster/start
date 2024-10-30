@@ -16,5 +16,7 @@ def home(request):
 def some_page(request):
     usertext = request.GET['user_text']
     reversed_text = usertext[::-1]
+    number_of_words = len(usertext.split())
     return render(request, 'some_page.html',
-                  {'user_text': usertext, 'reversedtext': reversed_text})
+                  {'user_text': usertext, 'reversedtext': reversed_text,
+                   'number_words': number_of_words})
